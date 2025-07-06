@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: cursos-academicos-backend
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: CORS_ORIGIN
+        value: https://cursos-academicos-frontend.onrender.com

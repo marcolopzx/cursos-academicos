@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import {
-  CreateCursoRequest,
-  UpdateCursoRequest,
-  CursoWithDocente,
-} from "../types";
+import { CreateCursoRequest, UpdateCursoRequest } from "../types";
 import { cursoService } from "../services/api";
 import CursoForm from "../components/CursoForm";
 import toast from "react-hot-toast";
