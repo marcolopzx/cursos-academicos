@@ -36,13 +36,13 @@ export default function Layout({ children }: LayoutProps) {
               >
                 Cursos
               </Link>
-              <Link
+              {/* <Link
                 to="/cursos/nuevo"
                 className="flex items-center px-3 py-2 rounded-md text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors"
               >
                 <Plus className="h-4 w-4 mr-1" />
                 Nuevo Curso
-              </Link>
+              </Link> */}
             </nav>
           </div>
         </div>
