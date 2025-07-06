@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { BookOpen, Plus } from "lucide-react";
+import { BookOpen } from "lucide-react";
 
 interface LayoutProps {
   children: ReactNode;
