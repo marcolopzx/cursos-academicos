@@ -49,7 +49,7 @@ export default function DocenteSelect({
         <option value="">Seleccionar docente</option>
         {docentes.map((docente) => (
           <option key={docente.id} value={docente.id}>
-            {docente.apellidos}, {docente.nombres} - {docente.profesion}
+            {docente.apellidos}, {docente.nombre} - {docente.profesion}
           </option>
         ))}
       </select>
