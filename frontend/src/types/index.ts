@@ -1,7 +1,7 @@
 export interface Docente {
   id: string;
   apellidos: string;
-  nombre: string;
+  nombres: string;
   profesion: string;
   fecha_nacimiento: string;
   correo: string;

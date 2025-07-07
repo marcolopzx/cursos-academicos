@@ -26,7 +26,7 @@ export default function CursoList({
       curso.docente?.apellidos
         .toLowerCase()
         .includes(searchTerm.toLowerCase()) ||
-      curso.docente?.nombre.toLowerCase().includes(searchTerm.toLowerCase());
+      curso.docente?.nombres.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCiclo =
       !selectedCiclo || curso.ciclo.toString() === selectedCiclo;
 
@@ -157,7 +157,7 @@ export default function CursoList({
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="text-sm text-gray-900">
                       {curso.docente
-                        ? `${curso.docente.apellidos}, ${curso.docente.nombre}`
+                        ? `${curso.docente.apellidos}, ${curso.docente.nombres}`
                         : "Sin asignar"}
                     </div>
                     {curso.docente && (
